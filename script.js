@@ -1,8 +1,8 @@
 //your JS code here. If required.
-
-document.addEventListener('DOMContentLoaded', function () {
+function openModal() {
     var modal = document.getElementById('myModal');
-    var btn = document.getElementById('openModal');
+	    var btn = document.getElementById('openModal');
+
     var closeButton = document.getElementsByClassName('close-modal')[0];
 
     btn.onclick = function () {
