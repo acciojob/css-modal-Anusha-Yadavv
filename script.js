@@ -1,7 +1,9 @@
 //your JS code here. If required.
-function openModal() {
-    var modalContainer = document.getElementById('modalcontainer');
 	    var btn = document.getElementById('openModal');
+    btn.onclick= function() {
+	
+
+    var modalContainer = document.getElementById('modalcontainer');
 
     var closeButton = document.getElementByClassName('close-modal')[0];
 
@@ -10,7 +12,7 @@ function openModal() {
     }
 
     window.onclick = function (event) {
-        if (event.target === modal) {
+        if (event.target === modalContainer) {
             modalContainer.style.display = 'none';
         }
     }
@@ -18,4 +20,4 @@ function openModal() {
     closeButton.onclick = function () {
         modalContainer.style.display = 'none';
     }
-});
+}
