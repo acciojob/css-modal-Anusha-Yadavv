@@ -1,21 +1,21 @@
 //your JS code here. If required.
 function openModal() {
-    var modal = document.getElementById('myModal');
+    var modalContainer = document.getElementById('modalcontainer');
 	    var btn = document.getElementById('openModal');
 
-    var closeButton = document.getElementsByClassName('close-modal')[0];
+    var closeButton = document.getElementByClassName('close-modal')[0];
 
     btn.onclick = function () {
-        modal.style.display = 'block';
+        modalContainer.style.display = 'block';
     }
 
     window.onclick = function (event) {
         if (event.target === modal) {
-            modal.style.display = 'none';
+            modalContainer.style.display = 'none';
         }
     }
 
     closeButton.onclick = function () {
-        modal.style.display = 'none';
+        modalContainer.style.display = 'none';
     }
 });
