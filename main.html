@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<button id="openModal">Open Modal</button>
+	<button id="openModal" onClick="onOpenModal()">Open Modal</button>
 	<div id="myModal" class=modal>
 		<div class="modal-content">
 			<div class="modal-header">
@@ -16,7 +16,7 @@
 				<h2>Modal Header</h2>
 				</div>
 				<div style="text-align:right;padding-right:10px;">
-				<button class="close-modal" style="height:30px;width:40px;background-color:red;color:white;">x</button>
+				<button onClick="onCloseModal()" class="close-modal" style="height:30px;width:40px;background-color:red;color:white;">x</button>
 				</div>
 				
 			</div>
@@ -24,38 +24,8 @@
 				<p>Modal Body</p>
 			</div>
 	</div>
-<!--     <script type="text/javascript" src="./script.js"></script> -->
-		 <script>
-    // JavaScript to control the modal behavior
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get the modal and the button to open it
-      var modal = document.getElementById('myModal');
-      var btn = document.getElementById('openModal');
-      var closeBtn = document.querySelector('.close-modal');
-
-      // Function to open the modal
-      function openModal() {
-        modal.style.display = 'block';
-      }
-
-      // Function to close the modal
-      function closeModal() {
-        modal.style.display = 'none';
-      }
-
-      // Event listeners
-      btn.addEventListener('click', openModal);
-      closeBtn.addEventListener('click', closeModal);
-
-      // Close the modal if clicked outside of it
-      window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-          closeModal();
-        }
-      });
-    });
-  </script>
-
+  <script type="text/javascript" src="./script.js"></script> 
+		
 
 </body>
 
