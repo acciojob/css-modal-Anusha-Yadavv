@@ -15,9 +15,9 @@ function onCloseModal() {
 }
 
  window.addEventListener('click', function (event) {
-	 	var modal = document.getElementById('myModal');
+	 var modal = document.getElementById('myModal');
 	 if (event.target === modal) {
-          closeModal();
+          onCloseModal();
         }
 });
 
